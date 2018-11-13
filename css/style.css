@@ -220,3 +220,87 @@ nav img {
   border: 1px solid black;
 }
 
+.price {
+  margin-top: 75px;
+  background: url(img/price-bg-2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.price-box {
+  border: 1px solid #fff;
+  padding: 0;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  margin-top: 25px;
+  color: #fff;
+  padding-bottom: 15px;
+}
+
+.price-image-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.price-image-box p {
+  color: #fff;
+  padding: 8px 8px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+.price-image-box.sketch {
+  background: url('img/sketch-design.jpg');
+  background-attachment: inherit;
+  background-position: center;
+  background-size: auto;
+  border-radius: 10px;
+}
+
+.price-image-box.full {
+  background: url('img/full-design.jpg');
+  background-attachment: inherit;
+  background-position: center;
+  background-size: auto;
+  border-radius: 10px;
+}
+
+.price-content-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.price-content-box ul {
+  padding-left: 30px;
+  padding-right: 20px;
+  list-style-type: none;
+}
+
+.price-content-box ul li:before { 
+  content: ''; 
+  display: inline-block; 
+  height: 1em; 
+  width: 1em; 
+  background-image: url('img/check-box.svg'); 
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  padding-left: 25px; 
+  }
+
+.price-content-box h4 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.price-content-box span {
+  padding: 8px 10px;
+  color: #fff;
+  border: 3px solid #2ecc71;
+  background: #27ae60;
+  border-radius: 20px
+}
