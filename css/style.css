@@ -1,0 +1,222 @@
+/*
+  Сбрасываем базовый настройки
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  Стилизуем бозовые настройки документа
+*/
+html,
+body {
+  background-color: #fff;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 200%;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+/*
+  Цвет меню
+*/
+.color-dark {
+  background: #000;
+}
+
+html.fp-enabled body {
+  margin-top: 50px;
+}
+
+/*
+  Размер логотипа
+*/
+nav img {
+  width: 200px;
+}
+
+/*
+  Цвет границы кнопки меню
+*/
+.navbar-toggler {
+  border-color: #fff;
+}
+
+/*
+  Цвет кнопки меню
+*/
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/*
+  Ссылка/текст в меню
+*/
+.nav-link {
+  color: #fff;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+/*
+  Ссылка в меню при наведение
+*/
+.nav-link:hover {
+  color: #fff;
+}
+
+.active {
+  border-bottom: 1px solid white;
+}
+
+/*
+  Текств меню при наведение
+*/
+.nav-link-text:hover {
+  border-bottom: 1px solid #fff;
+}
+
+/*
+  SVG иконки при наведение
+*/
+.second-nav li img {
+  height: 26px; width: auto;
+}
+
+.ideas {
+  background: url("img/main-section-bg-1.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients {
+  background: url("img/main-section-bg-2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.part-of-us {
+  background: url("img/main-section-bg-3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box {
+  color: #fff;
+  flex-direction: column;
+  padding: 10px 10px;
+  padding-bottom: 26px;
+  border: 2px solid #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 400px;
+  border-radius: 10px;
+}
+
+.content-box a:link,
+.content-box a:visited {
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 8px 10px;
+  font-size: 130%;
+}
+
+.content-box a:hover,
+.content-box a:active {
+  text-decoration: none;
+  border: 3px solid #fff;
+  background: #fff;
+  color: #000;
+}
+
+.content-box button {
+  color: #fff;
+  border: 3px solid #fff;
+  padding: 8px 10px;
+  font-size: 130%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content-box button:hover {
+  text-decoration: none;
+  border: 3px solid #fff;
+  background: #fff;
+  color: #000;
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contacts-box {
+  color: #000;
+  flex-direction: column;
+  width: 500px;
+}
+
+.about-us {
+  font-size: 120%;
+  font-weight: 400;
+  word-spacing: 10px;
+}
+
+.contact-social {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-social a {
+  width: 70px;
+}
+
+.contacts a img {
+  width: 50px;
+  height: 50px;
+}
+
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.feedback-box {
+  flex-direction: column;
+  width: 500px;
+}
+
+.feedback-box img {
+  border-radius: 50%;
+  border: 1px solid black;
+}
+

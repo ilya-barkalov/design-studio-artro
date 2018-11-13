@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Подключаем стили -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i" rel="stylesheet">
+  <link href="css/fullpage.css" rel="stylesheet">
+  <title>ArtRo - студия дизайна</title>
+</head>
+
+<body>
+  <!-- Modal -->
+  <div class="modal fade" id="contant-us" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Заявка на сотрудничество</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Ваше имя">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Ваш телефон">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Ваш email адрес">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success">Подать заявку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <header id="menu" class="color-dark fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-fixed-top color-dark" style="padding: 10px 0px">
+        <a href="index.html"><img src="img/logo.jpg" alt="Логотип"></a>
+        <button id="btn-toggler" class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".nav-content"
+          aria-expanded="false" aria-label="Toggle navigation" onclick="thenCollapsed()">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse nav-content">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a id="index" class="nav-link nav-link-text active" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-text" href="#">Услуги и цены</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-text" href="#">Галерея</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-text" href="feedback.html">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-collapse collapse justify-content-end">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">+7&ndash;(999)&ndash;500&ndash;40&ndash;70</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://vk.com/club170890285"><img src="img/logo-vk.svg" alt="logo-vk" style="height: 26px; width: auto;"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/katka42/"><img src="img/logo-instagram.svg" alt="logo-instagram"
+                  style="height: 26px; width: auto;"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="img/logo-telegram.svg" alt="logo-telegram" style="height: 26px; width: 30px;"></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="navbar-collapse collapse nav-content">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a id="menu-item-hide" href="#contacts" class="nav-link nav-link-text" style="display: none;">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <div id="fullpage">
+    <div class="section" data-anchor="ideas">
+      <div class="ideas">
+        <div class="content-box text-left">
+          <h2>Всегда<br>свежие<br>идеи</h2>
+          <a href="#">Посмотреть работы</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="section" data-anchor="clients">
+      <div class="clients">
+        <div class="content-box text-right">
+          <h2>Сотни<br>довольных<br>клиентов</h2>
+          <a href="#">Читать отзывы</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="part-of-us">
+      <div class="part-of-us">
+        <div class="content-box text-center">
+          <h2>Стань<br>частью<br>нас</h2>
+          <button type="button" class="" data-toggle="modal" data-target="#contant-us">Подать заявку</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section" data-anchor="contacts">
+      <div class="contacts">
+        <div class="contacts-box text-center">
+          <p class="about-us">Наша компания поможет вам создать красивый и комфортный интерьер с индивидуальным
+            характером</p>
+          <p>Мы находимся по адресу &mdash; ул. Пушкина 15, г. Томск</p>
+          <p>Наш номер телефона &mdash; +7 (999) 500 - 40 - 70</p>
+          <div class="contact-social">
+            <a class="nav-link" href="https://vk.com/club170890285"><img src="img/logo-vk-black.svg" alt="logo-vk"></a>
+            <a class="nav-link" href="https://www.instagram.com/katka42/"><img src="img/logo-instagram-black.svg" alt="logo-instagram"></a>
+            <a class="nav-link" href="#"><img src="img/logo-telegram-black.svg" alt="logo-telegram-black"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/fullpage.js"></script>
+  <script src="js/fullpage.extensions.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#fullpage').fullpage({
+        autoScrolling: true,
+        scrollHorizontally: true,
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
+        verticalCentered: false,
+        css3: false,
+        anchors: ['ideas', 'clients', 'part-of-us', 'contacts'],
+        scrollingSpeed: 700
+      });
+    });
+
+    $('#menu-item-hide').on('click', function () {
+      $('#index').removeClass('active');
+    });
+
+    function thenCollapsed() {
+      if ($('#btn-toggler').attr('aria-expanded') == 'false') {
+        $('#menu-item-hide').css('display', 'block');
+      } else {
+        $('#menu-item-hide').css('display', 'none');
+      }
+    }
+  </script>
+</body>
+
+</html>
