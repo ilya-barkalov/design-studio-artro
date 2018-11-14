@@ -326,9 +326,9 @@ nav img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 600px;
-  width: 600px;
-  border: 5px solid #000;
+  height: 400px;
+  width: 400px;
+  border: 1px solid #000;
 }
 
 .gallery-image-box a {
@@ -337,6 +337,7 @@ nav img {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   font-size: 120%;
+  border: 1px solid #fff;
 }
 
 .gallery-image-box a:hover {
@@ -396,6 +397,7 @@ nav img {
   border-radius: 10px;
   font-size: 120%;
   width: 300px;
+  border: 1px solid #fff;
 }
 
 .gallery-project-box a:hover {
