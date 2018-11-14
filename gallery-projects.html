@@ -8,9 +8,9 @@
   <!-- Подключаем стили -->
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
   <link href="css/fullpage.css" rel="stylesheet">
-  <title>ArtRo - студия дизайна</title>
+  <title>ArtRo - отзывы</title>
 </head>
 
 <body>
@@ -48,20 +48,20 @@
       <nav class="navbar navbar-expand-lg navbar-fixed-top color-dark" style="padding: 10px 0px">
         <a href="index.html"><img src="img/logo.jpg" alt="Логотип"></a>
         <button id="btn-toggler" class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".nav-content"
-          aria-expanded="false" aria-label="Toggle navigation" onclick="thenCollapsed()">
+          aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="navbar-collapse collapse nav-content">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a id="index" class="nav-link nav-link-text active" href="index.html">Главная</a>
+              <a id="index" class="nav-link nav-link-text" href="index.html">Главная</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-text" href="price.html">Услуги и цены</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-text" href="gallery.html">Галерея</a>
+              <a class="nav-link nav-link-text active" href="gallery.html">Галерея</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-text" href="feedback.html">Отзывы</a>
@@ -97,51 +97,33 @@
     </div>
   </header>
 
-
-  <div id="fullpage">
-    <div class="section" data-anchor="ideas">
-      <div class="ideas">
-        <div class="content-box text-left">
-          <h2>Всегда<br>свежие<br>идеи</h2>
-          <a href="gallery.html">Посмотреть работы</a>
-        </div>
-      </div>
-
+  <section class="gallery-project">
+    <div class="gallery-project-box">
+      <img src="img/koridor.jpg" alt="Коридоры">
+      <a href="#">Коридоры</a>
     </div>
-    <div class="section" data-anchor="clients">
-      <div class="clients">
-        <div class="content-box text-right">
-          <h2>Сотни<br>довольных<br>клиентов</h2>
-          <a href="feedback.html">Читать отзывы</a>
-        </div>
-      </div>
+    <div class="gallery-project-box">
+      <img src="img/balkon.jpg" alt="Коридоры">
+      <a href="#">Лоджии, балконы</a>
     </div>
+    <div class="gallery-project-box">
+      <img src="img/vanna.jpg" alt="Коридоры">
+      <a href="#">Санузлы</a>
+    </div>
+    <div class="gallery-project-box">
+      <img src="img/detskaya.jpg" alt="Коридоры">
+      <a href="#">Детские</a>
+    </div>
+    <div class="gallery-project-box">
+      <img src="img/kuhna.jpg" alt="Коридоры">
+      <a href="#">Кухни</a>
+    </div>
+    <div class="gallery-project-box">
+      <img src="img/gostinaya.jpg" alt="Коридоры">
+      <a href="#">Гостиные</a>
+    </div>
+  </section>
 
-    <div class="section" data-anchor="part-of-us">
-      <div class="part-of-us">
-        <div class="content-box text-center">
-          <h2>Стань<br>частью<br>нас</h2>
-          <button type="button" class="" data-toggle="modal" data-target="#contant-us">Подать заявку</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="section" data-anchor="contacts">
-      <div class="contacts">
-        <div class="contacts-box text-center">
-          <p class="about-us">Наша компания поможет вам создать красивый и комфортный интерьер с индивидуальным
-            характером</p>
-          <p>Мы находимся по адресу &mdash; ул. Пушкина 15, г. Томск</p>
-          <p>Наш номер телефона &mdash; +7 (999) 500 - 40 - 70</p>
-          <div class="contact-social">
-            <a class="nav-link" href="https://vk.com/club170890285"><img src="img/logo-vk-black.svg" alt="logo-vk"></a>
-            <a class="nav-link" href="https://www.instagram.com/katka42/"><img src="img/logo-instagram-black.svg" alt="logo-instagram"></a>
-            <a class="nav-link" href="#"><img src="img/logo-telegram-black.svg" alt="logo-telegram-black"></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="js/bootstrap.js"></script>
@@ -149,29 +131,6 @@
   <script src="js/fullpage.extensions.min.js"></script>
   <script src="js/main.js"></script>
   <script>
-    $(document).ready(function () {
-      $('#fullpage').fullpage({
-        autoScrolling: true,
-        scrollHorizontally: true,
-        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-        verticalCentered: false,
-        css3: false,
-        anchors: ['ideas', 'clients', 'part-of-us', 'contacts'],
-        scrollingSpeed: 700
-      });
-    });
-
-    $('#menu-item-hide').on('click', function () {
-      $('#index').removeClass('active');
-    });
-
-    function thenCollapsed() {
-      if ($('#btn-toggler').attr('aria-expanded') == 'false') {
-        $('#menu-item-hide').css('display', 'block');
-      } else {
-        $('#menu-item-hide').css('display', 'none');
-      }
-    }
   </script>
 </body>
 
