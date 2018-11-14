@@ -403,22 +403,22 @@ nav img {
   background: rgba(0, 0, 0, 1);
 }
 
-#img-slide {
+.gallery-project-slider {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 100vh;
   width: 100vw;
 }
 
-.carousel-inner img {
-  width: 100vw;
-  height: 100vh;
+.gallery-project-slider img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 768px) {
-  .carousel-inner img {
-    width: 100vw;
+  .gallery-project-slider img {
+    width: 100%;
     height: 300px;
   }
 }
